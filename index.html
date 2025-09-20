@@ -10,8 +10,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Cinzel', serif;
-    background: #bfc0c2; /* soft gray background */
-    color: #2c2c2c;
+    background: #b0b0b2; /* soft gray background */
+    color: #222;
   }
 
   .pages {
@@ -25,14 +25,14 @@
   .page {
     width: 90%;
     max-width: 900px;
-    background: #e1e2e4; /* lighter gray page background */
+    background: #dcdcdc; /* lighter gray page background */
     padding: 40px 30px;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    border-left: 8px solid #c9a66b; /* muted gold accent */
+    border-left: 8px solid #c9a66b; /* gold accent */
   }
 
-  .page img.logo {
+  .logo {
     display: block;
     margin: 0 auto 20px auto;
     width: 120px;
@@ -41,12 +41,13 @@
 
   h2 {
     font-size: 2rem;
-    color: #c9a66b; /* muted gold */
+    color: #c9a66b; /* gold accent */
     margin-bottom: 20px;
+    position: relative;
   }
 
   h2::before {
-    content: ":KT: ";
+    content: "⚔ "; /* symbol before section heading */
     font-size: 1.5rem;
     vertical-align: middle;
   }
@@ -103,7 +104,7 @@
   .credits {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(180deg, #e1e2e4 0%, #c9a66b 100%);
+    background: linear-gradient(180deg, #dcdcdc 0%, #c9a66b 100%);
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.25);
   }
@@ -123,160 +124,58 @@
 
 <div class="pages">
 
-  <!-- Page 1: Overview -->
+  <!-- Page 1: Cover / Classification -->
   <div class="page">
     <img src="kt-logo.png" alt="KT Logo" class="logo">
-    <h2>Section 1: Overview</h2>
-    <p>Welcome to the official Handbook of the Knights Templar. This guide provides essential knowledge for all members within the Robloxian Church games. Moderators and Templar members must understand the inner workings of the Order to maintain harmony and organization.</p>
-    <p>The following sections cover rules, uniforms, chain of command, formations, and promotions to help all members perform their duties with excellence.</p>
+    <h2>Knights Templar Handbook</h2>
+    <p><strong>Classification Warning:</strong> Faction Document: Exclusive Access for Order members. Unauthorized disclosure of this document will result in strict punishments, including potential blacklists from the Order.</p>
+
+    <h3>Table of Contents</h3>
+    <ul>
+      <li>Section 1: Overview - Introduction to the Official Templar Handbook</li>
+      <li>Section 2: Rules - Rules of the Order</li>
+      <li>Section 3: Regiment Uniforms - Uniform Regulations</li>
+      <li>Section 4: Chain of Command - Description of the Chain of Command</li>
+      <li>Section 5: Formations and Faces - Formations and Faces in the Order</li>
+      <li>Section 6: Promotions</li>
+    </ul>
   </div>
 
-  <!-- Page 2: Rules -->
+  <!-- Page 2: Overview -->
   <div class="page">
-    <img src="kt-logo.png" alt="KT Logo" class="logo">
+    <h2>Section 1: Overview</h2>
+    <p>Welcome to the official Handbook of the Knights Templar. This comprehensive guide is designed to provide essential information and guidance to the esteemed members of the Order within the Robloxian Church games. As moderators, Templar members must be well informed on the inner workings of the Order and the Church.</p>
+    <p>Here, we lay the foundation for a harmonious, organized, and informed Order. The following sections cover vital aspects of life within the community, ensuring all members perform their duties effectively and maintain discipline.</p>
+  </div>
+
+  <!-- Page 3: Rules -->
+  <div class="page">
     <h2>Section 2: Rules of the Order</h2>
     <h3>Rule 1: Responsibility, Respect, and Conduct</h3>
     <ul>
-      <li>All members are accountable for their actions.</li>
-      <li>Discrimination is strictly prohibited.</li>
-      <li>High standard of respect expected from Templar Knights.</li>
-      <li>Uniforms must be followed.</li>
+      <li>All members are accountable for their actions, including addressing issues like corruption, trolling, and other offences.</li>
+      <li>Discrimination against fellow members is strictly prohibited.</li>
+      <li>Templar Knights are expected to maintain high standards of respect within the community.</li>
+      <li>All members are required to adhere to the specified uniform guidelines.</li>
     </ul>
 
     <h3>Rule 2: Abuse of Power</h3>
     <ul>
-      <li>Admin powers must be used only when necessary.</li>
-      <li>Knights must not belittle other members.</li>
+      <li>Any granted power must not be misused; Admin commands are to be used only when necessary.</li>
+      <li>Knights and higher-ranking members must refrain from belittling fellow members.</li>
     </ul>
 
     <h3>Rule 3: Activity</h3>
     <ul>
-      <li>Members must meet their Activity Point quota.</li>
-      <li>Requests for inactivity require proper notice.</li>
+      <li>Members must stay active and meet their Activity Point Quota to remain in the Order.</li>
+      <li>Members unable to meet their Quota or requiring significant leave may request an Inactivity Notice, providing the necessary information.</li>
     </ul>
 
     <h3>Rule 4: Discharging</h3>
     <ul>
-      <li>Discharge requires minimum 5+ days of service.</li>
-      <li>Desertion without notice will lead to punishment based on rank.</li>
+      <li>Members may discharge with at least a 5+ day service to the Order, starting from their joining date.</li>
+      <li>Members who desert the Order without submitting a valid discharge request will face punishments depending on their rank & standing.</li>
     </ul>
-  </div>
-
-  <!-- Page 3: Uniforms -->
-  <div class="page">
-    <img src="kt-logo.png" alt="KT Logo" class="logo">
-    <h2>Section 3: Regiment Uniforms</h2>
-    <p>Uniform regulations within the regiment are vital to maintain discipline, organization, and a sense of belonging. The following guidelines clarify the designated uniforms for each rank:</p>
-
-    <ul>
-      <li><strong>LR’s (Initiate - Squire):</strong> Low-Rank Templar Armour</li>
-      <li><strong>HR’s (Trial Knight - Major-General):</strong> High-Rank Templar Armour</li>
-      <li><strong>HICOM (General - Grandmaster):</strong> High-Command Templar Armour</li>
-      <li><strong>REGIMENT UNIFORMS (Clergy Guardsmen + Watchmen):</strong> High-Rank Templar Armour</li>
-      <li><strong>DISCIPLINARY OFFICIALS:</strong> High-Command Templar Armour</li>
-    </ul>
-
-    <p>Adherence to uniform guidelines symbolizes commitment to discipline, organization, and belonging. Violations will face strict repercussions.</p>
-  </div>
-
-  <!-- Page 4: Chain of Command -->
-  <div class="page">
-    <img src="kt-logo.png" alt="KT Logo" class="logo">
-    <h2>Section 4: Chain of Command</h2>
-    <ul>
-      <li><strong>Low-Ranks (Templar Sergeants):</strong> Entry-level, limited authority. Progress by participating in events and showing commitment.</li>
-      <li><strong>High-Ranks (Templar Knights):</strong> Competent Knights and Lieutenants. Host events, manage low ranks, and ensure smooth operations. Can advance to High Command.</li>
-      <li><strong>HICOM Ranks (Templar High-Command):</strong> Most prestigious. Lead the Order, select High-Ranks, oversee events, assist College of Cardinals.</li>
-    </ul>
-  </div>
-
-  <!-- Page 5: Formations & Faces -->
-  <div class="page">
-    <img src="kt-logo.png" alt="KT Logo" class="logo">
-    <h2>Section 5: Formations and Faces</h2>
-    <table>
-      <tr>
-        <th>Formation</th>
-        <th>Face</th>
-        <th>Details</th>
-      </tr>
-      <tr>
-        <td>Wedge</td>
-        <td>Left, face</td>
-        <td>90° turn to the left</td>
-      </tr>
-      <tr>
-        <td>Left Wing</td>
-        <td>Right, face</td>
-        <td>90° turn to the right</td>
-      </tr>
-      <tr>
-        <td>Right Wing</td>
-        <td>About, face</td>
-        <td>180° turn backwards</td>
-      </tr>
-      <tr>
-        <td>Inverted Wedge</td>
-        <td>Left, incline</td>
-        <td>45° turn to the left</td>
-      </tr>
-      <tr>
-        <td>Inverted Left Wing</td>
-        <td>Right, incline</td>
-        <td>45° turn to the right</td>
-      </tr>
-      <tr>
-        <td>Center, face</td>
-        <td>Face starting STS position</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Single File Line</td>
-        <td>Control, face</td>
-        <td>Stare at host until “Center, face”</td>
-      </tr>
-      <tr>
-        <td>Shoulder-To-Shoulder</td>
-        <td>Center, face</td>
-        <td>Snap back to starting direction</td>
-      </tr>
-    </table>
-  </div>
-
-  <!-- Page 6: Promotions -->
-  <div class="page">
-    <img src="kt-logo.png" alt="KT Logo" class="logo">
-    <h2>Section 6: Promotions</h2>
-    <p>Members earn Activity Points (AP) through events, moderation logs, and community engagement. AP determines promotions:</p>
-
-    <div class="promotion-card">
-      <p><span class="highlight">Initiate:</span> Starting rank</p>
-      <p><span class="highlight">Man-At-Arms:</span> 200 AP</p>
-      <p><span class="highlight">Militia:</span> 300 AP</p>
-      <p><span class="highlight">Footman:</span> 400 AP</p>
-      <p><span class="highlight">Veteran Footman / Scout:</span> 500 AP</p>
-      <p><span class="highlight">Squire:</span> 600 AP</p>
-    </div>
-
-    <div class="promotion-card">
-      <p><span class="highlight">Knight:</span> Knighthood application</p>
-      <p><span class="highlight">Elite Knight:</span> 700 AP</p>
-      <p><span class="highlight">Lieutenant:</span> 800 AP</p>
-      <p><span class="highlight">Captain:</span> 1000 AP</p>
-      <p><span class="highlight">Commander:</span> 1200 AP</p>
-      <p><span class="highlight">Major:</span> 1400 AP</p>
-      <p><span class="highlight">Major General:</span> 1600 AP</p>
-    </div>
-
-    <p><strong>Explanation:</strong> After reaching a certain AP, you get promoted accordingly. Max 3 promotions for Low-Rank, 2 for High-Rank. Quota is monthly (30 days) and revised on the 1st. 200 AP required monthly for Low-Rank (3+ events). 350 AP for High-Rank (5+ events). Complete via moderation logs or event logs.</p>
-  </div>
-
-  <!-- Page 7: Credits -->
-  <div class="page credits">
-    <h2>Credits</h2>
-    <p>Written by Velmorian, Grandmaster of the Knights Templar</p>
-    <p>Inspired by LolaValerita, General of the Knights Templar</p>
-    <p>Approved by The Patron of Order, Monarch</p>
   </div>
 
 </div>
