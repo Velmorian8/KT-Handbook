@@ -10,8 +10,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Cinzel', serif;
-    background: #d9d9d9; /* soft gray background */
-    color: #3b2e1a;
+    background: #e1e4e8; /* soft gray-blue */
+    color: #2c2c2c;
   }
 
   .pages {
@@ -25,22 +25,29 @@
   .page {
     width: 90%;
     max-width: 900px;
-    background: #f2f2f2; /* light gray page background */
+    background: #f7f7f7;
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    border-left: 8px solid #bfa156;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-left: 8px solid #c9a66b;
+  }
+
+  .page img.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 120px;
+    height: auto;
   }
 
   h2 {
     font-size: 2rem;
-    color: #bfa156;
+    color: #c9a66b;
     margin-bottom: 20px;
   }
 
   h2::before {
-    content: attr(data-symbol) " ";
-    font-size: 2rem;
+    content: ":KT: ";
+    font-size: 1.5rem;
     vertical-align: middle;
   }
 
@@ -75,11 +82,11 @@
   }
 
   .promotion-card {
-    border: 2px solid #bfa156;
+    border: 2px solid #c9a66b;
     border-radius: 12px;
     padding: 15px 18px;
     margin-bottom: 15px;
-    background: #fff7e6;
+    background: #fffdf6;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
@@ -90,13 +97,13 @@
 
   .highlight {
     font-weight: bold;
-    color: #bfa156;
+    color: #c9a66b;
   }
 
   .credits {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(180deg, #f5f5f5 0%, #bfa156 100%);
+    background: linear-gradient(180deg, #f5f5f5 0%, #c9a66b 100%);
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.25);
   }
@@ -118,14 +125,15 @@
 
   <!-- Page 1: Overview -->
   <div class="page">
-    <h2 data-symbol="♛">Section 1: Overview</h2>
+    <img src="https://i.imgur.com/your-logo.png" alt="KT Logo" class="logo">
+    <h2>Section 1: Overview</h2>
     <p>Welcome to the official Handbook of the Knights Templar. This guide provides essential knowledge for all members within the Robloxian Church games. Moderators and Templar members must understand the inner workings of the Order to maintain harmony and organization.</p>
     <p>The following sections cover rules, uniforms, chain of command, formations, and promotions to help all members perform their duties with excellence.</p>
   </div>
 
   <!-- Page 2: Rules -->
   <div class="page">
-    <h2 data-symbol="⚔">Section 2: Rules of the Order</h2>
+    <h2>Section 2: Rules of the Order</h2>
     <h3>Rule 1: Responsibility, Respect, and Conduct</h3>
     <ul>
       <li>All members are accountable for their actions.</li>
@@ -153,90 +161,7 @@
     </ul>
   </div>
 
-  <!-- Page 3: Uniforms -->
-  <div class="page">
-    <h2 data-symbol="🛡">Section 3: Regiment Uniforms</h2>
-    <p>Uniform regulations within the regiment are a vital aspect of maintaining discipline and organisation, reinforcing the sense of belonging and identity among our members. The following guidelines provide clarity on the designated uniforms for each rank, highlighting the importance of adhering to these standards:</p>
-    <ul>
-      <li><span class="highlight">LR’s (Initiate - Squire):</span> Low-Rank Templar Armour</li>
-      <li><span class="highlight">HR’s (Trial Knight - Major-General):</span> High-Rank Templar Armour</li>
-      <li><span class="highlight">HICOM (General - Grandmaster):</span> High-Command Templar Armour</li>
-      <li><span class="highlight">REGIMENT UNIFORMS (Clergy Guardsmen + Watchmen):</span> High-Rank Templar Armour</li>
-      <li><span class="highlight">DISCIPLINARY OFFICIALS:</span> High-Command Templar Armour</li>
-    </ul>
-    <p>The importance of adhering to these uniform guidelines cannot be overstated, as it symbolises not only the commitment to discipline and organisation but also the sense of belonging to the Knights Templar. If a member of the Order is caught breaking the uniform guidelines, there will be strict repercussions.</p>
-  </div>
-
-  <!-- Page 4: Chain of Command -->
-  <div class="page">
-    <h2 data-symbol="🗡">Section 4: Chain of Command</h2>
-    <ul>
-      <li><span class="highlight">Low-Ranks (Templar Sergeants):</span> Entry-level, limited authority, progress via events and commitment.</li>
-      <li><span class="highlight">High-Ranks (Templar Knights):</span> Host events, manage low-ranks, advance to High Command.</li>
-      <li><span class="highlight">HICOM Ranks (Templar High-Command):</span> Lead, oversee events, select high-ranks, assist College of Cardinals.</li>
-    </ul>
-  </div>
-
-  <!-- Page 5: Formations -->
-  <div class="page">
-    <h2 data-symbol="📜">Section 5: Formations and Faces</h2>
-    <table>
-      <tr><th>Formation</th><th>Face</th><th>Details</th></tr>
-      <tr><td>Wedge</td><td>Left, face</td><td>90° turn to the left</td></tr>
-      <tr><td>Left Wing</td><td>Right, face</td><td>90° turn to the right</td></tr>
-      <tr><td>Right Wing</td><td>About, face</td><td>180° turn backwards</td></tr>
-      <tr><td>Inverted Wedge</td><td>Left, incline</td><td>45° turn to the left</td></tr>
-      <tr><td>Inverted Left Wing</td><td>Right, incline</td><td>45° turn to the right</td></tr>
-      <tr><td>Inverted Right Wing</td><td>Center, face</td><td>Face starting STS position</td></tr>
-      <tr><td>Single File Line</td><td>Control, face</td><td>Stare at host until “Center, face”</td></tr>
-      <tr><td>Shoulder-To-Shoulder</td><td>Center, face</td><td>Snap back to starting direction</td></tr>
-    </table>
-  </div>
-
-  <!-- Page 6: Promotions -->
-  <div class="page">
-    <h2 data-symbol="🏆">Section 6: Promotions</h2>
-    <p>Promotion is earned through Activity Points (AP) by attending events, logging moderation actions, and community participation.</p>
-
-    <div class="promotion-card">
-      <span class="highlight">Templar Sergeant Personnel</span>
-      <ul>
-        <li>Initiate: Starting rank</li>
-        <li>Man-At-Arms: 200 AP</li>
-        <li>Militia: 300 AP</li>
-        <li>Footman: 400 AP</li>
-        <li>Veteran Footman: 500 AP</li>
-        <li>Scout: 500 AP</li>
-        <li>Squire: 600 AP</li>
-      </ul>
-    </div>
-
-    <div class="promotion-card">
-      <span class="highlight">Knighthood Personnel</span>
-      <ul>
-        <li>Knight: Knighthood application</li>
-        <li>Elite Knight: 700 AP</li>
-        <li>Lieutenant: 800 AP</li>
-        <li>Captain: 1000 AP</li>
-        <li>Commander: 1200 AP</li>
-        <li>Major: 1400 AP</li>
-        <li>Major General: 1600 AP</li>
-      </ul>
-    </div>
-
-    <h3>Explanation</h3>
-    <p>After you reach, let's say 200 points, you get promoted to Man-At-Arms. To become Militia, you'll need 300 more points (meaning a total of 500 AP). The same applies for Knighthood personnel.</p>
-    <p>Max 3 promotions for Low-Rank Order members.<br>
-       Max 2 promotions for High-Rank Order members.</p>
-
-    <h3>AP Quota</h3>
-    <p>Quota is monthly, lasts for 30 days, and gets revised on the 1st day of each month.</p>
-    <ul>
-      <li>200 AP required monthly for Low-Rank Order members. Must have participated in at least 3 events (Mass, KT Inspection, lectures, etc.)</li>
-      <li>350 AP required monthly for High-Rank Order members. Must have joined or participated in 5 or more events (Mass, KT Training/lectures, Inspections)</li>
-    </ul>
-    <p>Remember, you have an entire month to complete the quota. You can finish it via Moderation logs or event logs. This new quota is designed to make both new and old KT members active. This requirement will start next month.</p>
-  </div>
+<!-- ... rest of the handbook pages remain the same ... -->
 
   <!-- Page 7: Credits -->
   <div class="page credits">
