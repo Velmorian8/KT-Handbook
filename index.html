@@ -10,25 +10,32 @@
     margin: 0;
     padding: 0;
     font-family: 'Cinzel', serif;
-    background: #f2e8d5; /* soft parchment */
+    background: #d9d9d9; /* soft gray background */
     color: #3b2e1a;
   }
 
-  .container {
+  .pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+  }
+
+  .page {
+    width: 90%;
     max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-    background: #fff8e6;
-    border-left: 10px solid #bfa156;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    background: #f2f2f2; /* light gray page background */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    border-left: 8px solid #bfa156;
   }
 
   h2 {
     font-size: 2rem;
     color: #bfa156;
-    margin-bottom: 15px;
-    position: relative;
+    margin-bottom: 20px;
   }
 
   h2::before {
@@ -45,7 +52,7 @@
   p, li {
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   ul {
@@ -55,7 +62,7 @@
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 15px 0;
+    margin: 20px 0;
   }
 
   th, td {
@@ -64,21 +71,21 @@
   }
 
   th {
-    background: #f8f2e1;
+    background: #eae0c6;
   }
 
   .promotion-card {
     border: 2px solid #bfa156;
-    border-radius: 10px;
-    padding: 12px 15px;
-    margin-bottom: 12px;
-    background: #fff6e0;
+    border-radius: 12px;
+    padding: 15px 18px;
+    margin-bottom: 15px;
+    background: #fff7e6;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .promotion-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
   }
 
   .highlight {
@@ -89,9 +96,9 @@
   .credits {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(180deg, #fdf5e6 0%, #bfa156 100%);
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(180deg, #f5f5f5 0%, #bfa156 100%);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
   }
 
   .credits h2 {
@@ -107,107 +114,121 @@
 </head>
 <body>
 
-<div class="container">
-  <!-- Overview -->
-  <h2 data-symbol="♛">Section 1: Overview</h2>
-  <p>Welcome to the official Handbook of the Knights Templar. This guide provides essential knowledge for all members within the Robloxian Church games. Moderators and Templar members must understand the inner workings of the Order to maintain harmony and organization.</p>
-  <p>The following sections cover rules, uniforms, chain of command, formations, and promotions to help all members perform their duties with excellence.</p>
+<div class="pages">
 
-  <!-- Rules -->
-  <h2 data-symbol="⚔">Section 2: Rules of the Order</h2>
-  <h3>Rule 1: Responsibility, Respect, and Conduct</h3>
-  <ul>
-    <li>All members are accountable for their actions.</li>
-    <li>Discrimination is strictly prohibited.</li>
-    <li>High standard of respect expected from Templar Knights.</li>
-    <li>Uniforms must be followed.</li>
-  </ul>
-
-  <h3>Rule 2: Abuse of Power</h3>
-  <ul>
-    <li>Admin powers must be used only when necessary.</li>
-    <li>Knights must not belittle other members.</li>
-  </ul>
-
-  <h3>Rule 3: Activity</h3>
-  <ul>
-    <li>Members must meet their Activity Point quota.</li>
-    <li>Requests for inactivity require proper notice.</li>
-  </ul>
-
-  <h3>Rule 4: Discharging</h3>
-  <ul>
-    <li>Discharge requires minimum 5+ days of service.</li>
-    <li>Desertion without notice will lead to punishment based on rank.</li>
-  </ul>
-
-  <!-- Uniforms -->
-  <h2 data-symbol="🛡">Section 3: Regiment Uniforms</h2>
-  <ul>
-    <li><span class="highlight">LR’s (Initiate - Squire):</span> Low-Rank Templar Armour</li>
-    <li><span class="highlight">HR’s (Trial Knight - Major-General):</span> High-Rank Templar Armour</li>
-    <li><span class="highlight">HICOM (General - Grandmaster):</span> High-Command Templar Armour</li>
-    <li><span class="highlight">REGIMENT UNIFORMS:</span> High-Rank Templar Armour</li>
-    <li><span class="highlight">DISCIPLINARY OFFICIALS:</span> High-Command Templar Armour</li>
-  </ul>
-
-  <!-- Chain of Command -->
-  <h2 data-symbol="🗡">Section 4: Chain of Command</h2>
-  <ul>
-    <li><span class="highlight">Low-Ranks (Templar Sergeants):</span> Entry-level, limited authority, progress via events and commitment.</li>
-    <li><span class="highlight">High-Ranks (Templar Knights):</span> Host events, manage low-ranks, advance to High Command.</li>
-    <li><span class="highlight">HICOM Ranks (Templar High-Command):</span> Lead, oversee events, select high-ranks, assist College of Cardinals.</li>
-  </ul>
-
-  <!-- Formations -->
-  <h2 data-symbol="📜">Section 5: Formations and Faces</h2>
-  <table>
-    <tr><th>Formation</th><th>Face</th><th>Details</th></tr>
-    <tr><td>Wedge</td><td>Left, face</td><td>90° turn to the left</td></tr>
-    <tr><td>Left Wing</td><td>Right, face</td><td>90° turn to the right</td></tr>
-    <tr><td>Right Wing</td><td>About, face</td><td>180° turn backwards</td></tr>
-    <tr><td>Inverted Wedge</td><td>Left, incline</td><td>45° turn to the left</td></tr>
-    <tr><td>Inverted Left Wing</td><td>Right, incline</td><td>45° turn to the right</td></tr>
-    <tr><td>Inverted Right Wing</td><td>Center, face</td><td>Face starting STS position</td></tr>
-    <tr><td>Single File Line</td><td>Control, face</td><td>Stare at host until “Center, face”</td></tr>
-    <tr><td>Shoulder-To-Shoulder</td><td>Center, face</td><td>Snap back to starting direction</td></tr>
-  </table>
-
-  <!-- Promotions -->
-  <h2 data-symbol="🏆">Section 6: Promotions</h2>
-  <p>Promotion is earned through Activity Points (AP) by attending events, logging moderation actions, and community participation.</p>
-  <div class="promotion-card">
-    <span class="highlight">Templar Sergeant Personnel</span>
-    <ul>
-      <li>Initiate: Starting rank</li>
-      <li>Man-At-Arms: 200 AP</li>
-      <li>Militia: 300 AP</li>
-      <li>Footman: 400 AP</li>
-      <li>Veteran Footman: 500 AP</li>
-      <li>Scout: 500 AP</li>
-      <li>Squire: 600 AP</li>
-    </ul>
+  <!-- Page 1: Overview -->
+  <div class="page">
+    <h2 data-symbol="♛">Section 1: Overview</h2>
+    <p>Welcome to the official Handbook of the Knights Templar. This guide provides essential knowledge for all members within the Robloxian Church games. Moderators and Templar members must understand the inner workings of the Order to maintain harmony and organization.</p>
+    <p>The following sections cover rules, uniforms, chain of command, formations, and promotions to help all members perform their duties with excellence.</p>
   </div>
-  <div class="promotion-card">
-    <span class="highlight">Knighthood Personnel</span>
+
+  <!-- Page 2: Rules -->
+  <div class="page">
+    <h2 data-symbol="⚔">Section 2: Rules of the Order</h2>
+    <h3>Rule 1: Responsibility, Respect, and Conduct</h3>
     <ul>
-      <li>Knight: Knighthood application</li>
-      <li>Elite Knight: 700 AP</li>
-      <li>Lieutenant: 800 AP</li>
-      <li>Captain: 1000 AP</li>
-      <li>Commander: 1200 AP</li>
-      <li>Major: 1400 AP</li>
-      <li>Major General: 1600 AP</li>
+      <li>All members are accountable for their actions.</li>
+      <li>Discrimination is strictly prohibited.</li>
+      <li>High standard of respect expected from Templar Knights.</li>
+      <li>Uniforms must be followed.</li>
+    </ul>
+
+    <h3>Rule 2: Abuse of Power</h3>
+    <ul>
+      <li>Admin powers must be used only when necessary.</li>
+      <li>Knights must not belittle other members.</li>
+    </ul>
+
+    <h3>Rule 3: Activity</h3>
+    <ul>
+      <li>Members must meet their Activity Point quota.</li>
+      <li>Requests for inactivity require proper notice.</li>
+    </ul>
+
+    <h3>Rule 4: Discharging</h3>
+    <ul>
+      <li>Discharge requires minimum 5+ days of service.</li>
+      <li>Desertion without notice will lead to punishment based on rank.</li>
     </ul>
   </div>
 
-  <!-- Credits -->
-  <div class="credits">
+  <!-- Page 3: Uniforms -->
+  <div class="page">
+    <h2 data-symbol="🛡">Section 3: Regiment Uniforms</h2>
+    <ul>
+      <li><span class="highlight">LR’s (Initiate - Squire):</span> Low-Rank Templar Armour</li>
+      <li><span class="highlight">HR’s (Trial Knight - Major-General):</span> High-Rank Templar Armour</li>
+      <li><span class="highlight">HICOM (General - Grandmaster):</span> High-Command Templar Armour</li>
+      <li><span class="highlight">REGIMENT UNIFORMS:</span> High-Rank Templar Armour</li>
+      <li><span class="highlight">DISCIPLINARY OFFICIALS:</span> High-Command Templar Armour</li>
+    </ul>
+  </div>
+
+  <!-- Page 4: Chain of Command -->
+  <div class="page">
+    <h2 data-symbol="🗡">Section 4: Chain of Command</h2>
+    <ul>
+      <li><span class="highlight">Low-Ranks (Templar Sergeants):</span> Entry-level, limited authority, progress via events and commitment.</li>
+      <li><span class="highlight">High-Ranks (Templar Knights):</span> Host events, manage low-ranks, advance to High Command.</li>
+      <li><span class="highlight">HICOM Ranks (Templar High-Command):</span> Lead, oversee events, select high-ranks, assist College of Cardinals.</li>
+    </ul>
+  </div>
+
+  <!-- Page 5: Formations -->
+  <div class="page">
+    <h2 data-symbol="📜">Section 5: Formations and Faces</h2>
+    <table>
+      <tr><th>Formation</th><th>Face</th><th>Details</th></tr>
+      <tr><td>Wedge</td><td>Left, face</td><td>90° turn to the left</td></tr>
+      <tr><td>Left Wing</td><td>Right, face</td><td>90° turn to the right</td></tr>
+      <tr><td>Right Wing</td><td>About, face</td><td>180° turn backwards</td></tr>
+      <tr><td>Inverted Wedge</td><td>Left, incline</td><td>45° turn to the left</td></tr>
+      <tr><td>Inverted Left Wing</td><td>Right, incline</td><td>45° turn to the right</td></tr>
+      <tr><td>Inverted Right Wing</td><td>Center, face</td><td>Face starting STS position</td></tr>
+      <tr><td>Single File Line</td><td>Control, face</td><td>Stare at host until “Center, face”</td></tr>
+      <tr><td>Shoulder-To-Shoulder</td><td>Center, face</td><td>Snap back to starting direction</td></tr>
+    </table>
+  </div>
+
+  <!-- Page 6: Promotions -->
+  <div class="page">
+    <h2 data-symbol="🏆">Section 6: Promotions</h2>
+    <p>Promotion is earned through Activity Points (AP) by attending events, logging moderation actions, and community participation.</p>
+    <div class="promotion-card">
+      <span class="highlight">Templar Sergeant Personnel</span>
+      <ul>
+        <li>Initiate: Starting rank</li>
+        <li>Man-At-Arms: 200 AP</li>
+        <li>Militia: 300 AP</li>
+        <li>Footman: 400 AP</li>
+        <li>Veteran Footman: 500 AP</li>
+        <li>Scout: 500 AP</li>
+        <li>Squire: 600 AP</li>
+      </ul>
+    </div>
+    <div class="promotion-card">
+      <span class="highlight">Knighthood Personnel</span>
+      <ul>
+        <li>Knight: Knighthood application</li>
+        <li>Elite Knight: 700 AP</li>
+        <li>Lieutenant: 800 AP</li>
+        <li>Captain: 1000 AP</li>
+        <li>Commander: 1200 AP</li>
+        <li>Major: 1400 AP</li>
+        <li>Major General: 1600 AP</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Page 7: Credits -->
+  <div class="page credits">
     <h2>Credits</h2>
     <p>Written by Velmorian, Grandmaster of the Knights Templar</p>
     <p>Inspired by LolaValerita, General of the Knights Templar</p>
   </div>
 
 </div>
+
 </body>
 </html>
