@@ -1,14 +1,3 @@
-Absolutely! I can turn everything you sent into a **fully styled, professional HTML handbook** for GitHub Pages. It will have:
-
-* Table of Contents with links to sections
-* Color-coded headers and sections
-* Clean spacing and formatting for readability
-* Parchment/medieval feel with modern style
-* Highlighting important points like AP, rules, and uniforms
-
-Here’s a complete HTML code:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,90 +6,98 @@ Here’s a complete HTML code:
   <title>Knights Templar Official Handbook</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
   <style>
+    /* GENERAL STYLES */
     body {
       font-family: 'Cinzel', serif;
-      background: #f2e9dc;
+      background: #fdf6e3;
       color: #1b1b1b;
+      margin: 0;
+      padding: 0;
       line-height: 1.7;
-      padding: 40px 20px;
-      background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
     }
 
     .container {
-      max-width: 1200px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
     header {
       text-align: center;
-      margin-bottom: 50px;
+      padding: 50px 20px 30px;
+      background: linear-gradient(90deg, #bfa156, #f0e6d2);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     header h1 {
-      font-size: 2.8rem;
-      color: #8b0000;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+      font-size: 3rem;
       margin: 0;
+      color: #3b2e1a;
     }
 
     header p {
       font-size: 1.2rem;
-      color: #555;
       margin-top: 10px;
+      color: #3b2e1a;
     }
 
     nav {
-      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+      flex-wrap: wrap;
+      gap: 15px;
     }
 
-    nav ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    nav ul li {
-      margin-bottom: 10px;
-    }
-
-    nav ul li a {
+    nav a {
       text-decoration: none;
-      color: #2c2c54;
+      background: #bfa156;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
       font-weight: bold;
-      transition: color 0.2s ease;
+      transition: background 0.3s;
     }
 
-    nav ul li a:hover {
-      color: #8b0000;
+    nav a:hover {
+      background: #e0c167;
     }
 
     section {
-      margin-bottom: 50px;
+      background: #fffdf5;
+      padding: 30px 40px;
+      margin-bottom: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-left: 8px solid #bfa156;
+      page-break-after: always;
     }
 
     h2 {
-      color: #8b0000;
+      color: #bfa156;
       font-size: 2rem;
-      border-bottom: 2px solid rgba(139,0,0,0.5);
-      padding-bottom: 5px;
       margin-bottom: 20px;
+      border-bottom: 2px solid #e0c167;
+      padding-bottom: 5px;
     }
 
     h3 {
-      color: #333;
-      margin-top: 20px;
+      color: #3b2e1a;
+      margin: 20px 0 10px;
     }
 
     p, li {
-      margin-bottom: 10px;
+      font-size: 1.05rem;
     }
 
     ul {
       margin-left: 20px;
+      margin-bottom: 20px;
     }
 
     .highlight {
       font-weight: bold;
-      color: #2c2c54;
+      color: #bfa156;
     }
 
     table {
@@ -109,171 +106,184 @@ Here’s a complete HTML code:
       margin: 20px 0;
     }
 
-    table, th, td {
-      border: 1px solid #8b0000;
-    }
-
     th, td {
-      padding: 10px;
+      padding: 12px;
+      border: 1px solid #e0c167;
       text-align: left;
     }
 
     th {
-      background-color: #f4c2c2;
+      background: #f8f2e1;
+      color: #3b2e1a;
+    }
+
+    .promotion-card {
+      border: 2px solid #bfa156;
+      border-radius: 12px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      background: #fff8e1;
+      transition: transform 0.2s ease;
+    }
+
+    .promotion-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
     }
 
     footer {
-      margin-top: 60px;
       text-align: center;
       font-style: italic;
       font-size: 1rem;
-      border-top: 2px solid #999;
-      padding-top: 20px;
+      color: #3b2e1a;
+      margin: 60px 0 30px;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
     <header>
-      <h1>⚔️ Knights Templar Official Handbook 📜</h1>
-      <p>Complete guide to rules, uniforms, chain of command, formations, and promotions</p>
+      <h1>Knights Templar Official Handbook</h1>
+      <p>Aesthetic guide to rules, uniforms, chain of command, formations, and promotions</p>
     </header>
 
     <nav>
-      <h2>Table of Contents</h2>
-      <ul>
-        <li><a href="#section1">Section 1: Overview</a></li>
-        <li><a href="#section2">Section 2: Rules</a></li>
-        <li><a href="#section3">Section 3: Regiment Uniforms</a></li>
-        <li><a href="#section4">Section 4: Chain of Command</a></li>
-        <li><a href="#section5">Section 5: Formations and Faces</a></li>
-        <li><a href="#section6">Section 6: Promotions</a></li>
-      </ul>
+      <a href="#overview">Overview</a>
+      <a href="#rules">Rules</a>
+      <a href="#uniforms">Uniforms</a>
+      <a href="#command">Chain of Command</a>
+      <a href="#formations">Formations</a>
+      <a href="#promotions">Promotions</a>
     </nav>
 
-    <section id="section1">
+    <!-- Section 1 -->
+    <section id="overview">
       <h2>Section 1: Overview</h2>
       <p>Welcome to the official Handbook of the Knights Templar. This comprehensive guide provides essential guidance for members of the Order within the Robloxian Church games. Moderators and Templar members must understand the inner workings of the Order and Church to maintain harmony and organization.</p>
+      <p>The following sections cover rules, uniforms, chain of command, formations, and promotions to help all members perform their duties with excellence.</p>
     </section>
 
-    <section id="section2">
-      <h2>Section 2: Rules</h2>
-      <h3>Rules and Regulations</h3>
-      <p>The Knights Templar abide by a set of rules to preserve respect, order, and cooperation.</p>
-
+    <!-- Section 2 -->
+    <section id="rules">
+      <h2>Section 2: Rules of the Order</h2>
       <h3>Rule 1: Responsibility, Respect, and Conduct</h3>
       <ul>
-        <li>All members are accountable for their actions, including issues like corruption or trolling.</li>
+        <li>All members are accountable for their actions.</li>
         <li>Discrimination is strictly prohibited.</li>
-        <li>Templar Knights must maintain high standards of respect.</li>
-        <li>Uniform guidelines must be adhered to at all times.</li>
+        <li>High standard of respect expected from Templar Knights.</li>
+        <li>Uniforms must be followed.</li>
       </ul>
 
       <h3>Rule 2: Abuse of Power</h3>
       <ul>
-        <li>Admin powers must only be used when necessary.</li>
-        <li>Knights and higher ranks must not belittle others.</li>
+        <li>Admin powers must be used only when necessary.</li>
+        <li>Knights must not belittle other members.</li>
       </ul>
 
       <h3>Rule 3: Activity</h3>
       <ul>
-        <li>Members must stay active and meet their Activity Point (AP) Quota.</li>
-        <li>Inactivity requests require an Inactivity-Notice with explanation.</li>
+        <li>Members must meet their Activity Point quota.</li>
+        <li>Requests for inactivity require proper notice.</li>
       </ul>
 
       <h3>Rule 4: Discharging</h3>
       <ul>
-        <li>Members may discharge after at least 5 days of service.</li>
-        <li>Desertion without valid notice will incur punishments based on rank and standing.</li>
+        <li>Discharge requires minimum 5+ days of service.</li>
+        <li>Desertion without notice will lead to punishment based on rank.</li>
       </ul>
     </section>
 
-    <section id="section3">
+    <!-- Section 3 -->
+    <section id="uniforms">
       <h2>Section 3: Regiment Uniforms</h2>
-      <p>Uniform regulations maintain discipline and identity among members. Adherence is mandatory; violations carry strict consequences.</p>
+      <p>Uniform regulations maintain discipline and identity. Strict adherence is mandatory.</p>
       <ul>
         <li><span class="highlight">LR’s (Initiate - Squire):</span> Low-Rank Templar Armour</li>
         <li><span class="highlight">HR’s (Trial Knight - Major-General):</span> High-Rank Templar Armour</li>
         <li><span class="highlight">HICOM (General - Grandmaster):</span> High-Command Templar Armour</li>
-        <li><span class="highlight">REGIMENT UNIFORMS (Clergy Guardsmen + Watchmen):</span> High-Rank Templar Armour</li>
+        <li><span class="highlight">REGIMENT UNIFORMS:</span> High-Rank Templar Armour</li>
         <li><span class="highlight">DISCIPLINARY OFFICIALS:</span> High-Command Templar Armour</li>
       </ul>
     </section>
 
-    <section id="section4">
+    <!-- Section 4 -->
+    <section id="command">
       <h2>Section 4: Chain of Command</h2>
       <ul>
-        <li><span class="highlight">Low-Ranks (Templar Sergeants):</span> Entry-level with limited authority. Progress by participation and commitment.</li>
-        <li><span class="highlight">High-Ranks (Templar Knights):</span> Competent Knights and Lieutenants hosting events and managing low ranks. Can advance to High Command.</li>
-        <li><span class="highlight">HICOM Ranks (Templar High-Command):</span> Lead from the helm, oversee events, select high-ranks, assist the College of Cardinals.</li>
+        <li><span class="highlight">Low-Ranks (Templar Sergeants):</span> Entry-level, limited authority, can progress via events and commitment.</li>
+        <li><span class="highlight">High-Ranks (Templar Knights):</span> Host events, manage low-ranks, advance to High Command.</li>
+        <li><span class="highlight">HICOM Ranks (Templar High-Command):</span> Lead, oversee events, select high-ranks, assist College of Cardinals.</li>
       </ul>
     </section>
 
-    <section id="section5">
+    <!-- Section 5 -->
+    <section id="formations">
       <h2>Section 5: Formations and Faces</h2>
       <table>
-        <tr>
-          <th>Formation</th>
-          <th>Face</th>
-          <th>Details</th>
-        </tr>
+        <tr><th>Formation</th><th>Face</th><th>Details</th></tr>
         <tr><td>Wedge</td><td>Left, face</td><td>90° turn to the left</td></tr>
         <tr><td>Left Wing</td><td>Right, face</td><td>90° turn to the right</td></tr>
         <tr><td>Right Wing</td><td>About, face</td><td>180° turn backwards</td></tr>
         <tr><td>Inverted Wedge</td><td>Left, incline</td><td>45° turn to the left</td></tr>
         <tr><td>Inverted Left Wing</td><td>Right, incline</td><td>45° turn to the right</td></tr>
-        <tr><td>Inverted Right Wing</td><td>Center, face</td><td>Face the starting STS Position</td></tr>
-        <tr><td>Single File Line</td><td>Control, face</td><td>Constantly stare at the host until “Center, face”</td></tr>
-        <tr><td>Shoulder-To-Shoulder</td><td>Center, face</td><td>Snap back to starting direction of event</td></tr>
+        <tr><td>Inverted Right Wing</td><td>Center, face</td><td>Face starting STS position</td></tr>
+        <tr><td>Single File Line</td><td>Control, face</td><td>Stare at host until “Center, face”</td></tr>
+        <tr><td>Shoulder-To-Shoulder</td><td>Center, face</td><td>Snap back to starting direction</td></tr>
       </table>
     </section>
 
-    <section id="section6">
+    <!-- Section 6 -->
+    <section id="promotions">
       <h2>Section 6: Promotions</h2>
-      <p>Members are promoted through Activity Points (AP) earned by attending events, logging moderation actions, and community interaction.</p>
+      <p>Promotion is earned through Activity Points (AP) by attending events, logging moderation actions, and community participation.</p>
 
-      <h3>Event/Task AP Gain</h3>
+      <h3>Event AP Gain</h3>
       <ul>
         <li>RC Sunday Mass: 60 AP</li>
         <li>RC Weekday Mass: 30 AP</li>
         <li>RC Major Public Events: 40 AP</li>
         <li>Ordinations: 200 AP</li>
         <li>Templar Inspections: 150 AP</li>
-        <li>Templar Exclusive Events (3/week max): 40 AP</li>
+        <li>Exclusive Events (max 3/week): 40 AP</li>
         <li>Altar Servers Club: 30 AP</li>
-        <li>Logging Moderator Work: 5 AP per troll removed, 2 AP per warning, 5 AP per hour of playtime (60 AP daily cap)</li>
+        <li>Moderator Logs: 5 AP per kick/ban, 2 AP per warning, 5 AP per hour of playtime (60 AP daily cap)</li>
       </ul>
 
       <h3>AP Promotion Requirements</h3>
-      <p><span class="highlight">TEMPLAR SERGEANT PERSONNEL</span></p>
-      <ul>
-        <li>Initiate: Starting rank</li>
-        <li>Man-At-Arms: 200 AP</li>
-        <li>Militia: 300 AP</li>
-        <li>Footman: 400 AP</li>
-        <li>Veteran Footman: 500 AP</li>
-        <li>Scout: 500 AP</li>
-        <li>Squire: 600 AP</li>
-      </ul>
 
-      <p><span class="highlight">KNIGHTHOOD PERSONNEL</span></p>
-      <ul>
-        <li>Knight: Knighthood application</li>
-        <li>Elite Knight: 700 AP</li>
-        <li>Lieutenant: 800 AP</li>
-        <li>Captain: 1000 AP</li>
-        <li>Commander: 1200 AP</li>
-        <li>Major: 1400 AP</li>
-        <li>Major General: 1600 AP</li>
-      </ul>
+      <div class="promotion-card">
+        <span class="highlight">Templar Sergeant Personnel</span>
+        <ul>
+          <li>Initiate: Starting rank</li>
+          <li>Man-At-Arms: 200 AP</li>
+          <li>Militia: 300 AP</li>
+          <li>Footman: 400 AP</li>
+          <li>Veteran Footman: 500 AP</li>
+          <li>Scout: 500 AP</li>
+          <li>Squire: 600 AP</li>
+        </ul>
+      </div>
 
-      <p>Max promotions: 3 for Low-Rank, 2 for High-Rank members.</p>
-      <p><span class="highlight">Monthly Quota:</span> 200 AP for Low-Rank, 350 AP for High-Rank. Must participate in minimum events as described.</p>
+      <div class="promotion-card">
+        <span class="highlight">Knighthood Personnel</span>
+        <ul>
+          <li>Knight: Knighthood application</li>
+          <li>Elite Knight: 700 AP</li>
+          <li>Lieutenant: 800 AP</li>
+          <li>Captain: 1000 AP</li>
+          <li>Commander: 1200 AP</li>
+          <li>Major: 1400 AP</li>
+          <li>Major General: 1600 AP</li>
+        </ul>
+      </div>
+
+      <p>Max promotions: 3 for Low-Rank, 2 for High-Rank. Monthly quotas: 200 AP for Low-Rank, 350 AP for High-Rank with minimum event participation.</p>
     </section>
 
     <footer>
       Written by Velmorian, Helped by LolaValerita
     </footer>
   </div>
-</body
-```
+</body>
+</html>
